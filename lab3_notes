@@ -1,0 +1,17 @@
+should tell cgi what the interpreter is
+ls /usr/bin/env 
+ls /usr/bin/env python --> just run python
+
+chmod +x hello.py 
+
+Script ---(print stdout)---> Server
+	<---(environment variables)---
+	<---(*query string)---
+	<---(stdin)---
+
+curl -i localhost:8000/hello.py
+(after add print "content-type" the webroswer can print the text without poping out window with python script error
+
+uri: port + host + id ends in '?' 
+everything after '?' is query
+
